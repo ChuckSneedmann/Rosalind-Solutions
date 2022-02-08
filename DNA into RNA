@@ -1,0 +1,14 @@
+with open("rosalind_rna.txt", "r") as rawdata:
+    data = rawdata.read()
+
+rna = []
+
+for i in data:
+    if i == 'T':
+        rna.append('U')
+    else:
+        rna.append(i)
+
+output = ''.join(rna)
+
+print(output)
