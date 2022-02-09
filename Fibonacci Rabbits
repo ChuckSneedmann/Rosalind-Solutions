@@ -1,0 +1,7 @@
+def fib(n, k = 1):
+    list = [1, 1]
+    for i in range(n-2):
+        list.append(list[-1]+(list[-2] * k))
+    print(list[-1])
+
+fib(32, 3)
